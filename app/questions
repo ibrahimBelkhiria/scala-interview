@@ -1,12 +1,47 @@
 
 1) Explain REST and RESTful
+REST represents Representional State Transfer , it is relatively new aspect of writing web services .
+RESTful is referred for web services written by applying REST architectural concept.These webservices uses HTTP methods to implement
+the concept of REST architecture .
 
-2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.)
+2) Explain the architectural style for the creation of a web API (client server communication, formatting language, etc.) 
 
-3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.)
+The architectural style to create a web api : 
+ *HTTP for client/server communication .
+ *XML/JSON as formatting language .
+ *Simple URI as the adress for the services.
+ *Stateless communication .
+
+3) Explain HTTP requests types when used with RESTful web (GET, PUT, POST, etc.) 
+ There are  HTTP requests that are idempotent which are GET , PUT and DELETE .This means that they are safe for multiple calls . 
+ POST is neither safe nor idempotent .Making two identical POST requests will most-likely result in two resources containing 
+ the same information.
+  GET : read-only 
+  POST,PUT,DELETE : write to the server
 
 4) Explain the difference between stateless and stateful protocol. Which type of protocol is HTTP ?
 
+* Stateless Protocol does not require the server to retain session information or status about each communicating partner for the duration
+of multiple requests .
+* Stateful : a protocol that requires keeping of the internal state on the server .
+* HTTP is a stateless protocol each request message can be understood in isolation . 
+
 5) Explain the difference between a GET and a POST (like how are sent the parameters)
 
+                               GET    vs     POST 
+                Parameter in URL      |   Parameter in the body 
+                used for fetching data|   used for updating data
+                maximum url length    |   no max length 
+         Should not change the server |   ok to change the server 
+                                      |
+                                      |
+
 6) You can’t work out how to solve a coding problem. What do you do to find the answer?
+If I have trouble solving a coding problem. First, I would ask my colleagues to help, which will mostly solve the problem. 
+If we could not I will contact the community on the Internet, for example Stackoverflow.
+
+
+
+
+
+
