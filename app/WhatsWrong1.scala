@@ -10,8 +10,10 @@ object WhatsWrong1 {
   case object Supporter extends Interface {
 
     override val city = "Paris"
+    // add this line to avoid the null 
+    override val support: String = s"Ici c'est $city !"
   }
 
-  Supporter.city //What does this print ?
-  Supporter.support //What does this print and why ? How to fix it ?
+  Supporter.city //this prints:  Paris
+  Supporter.support // this prints Ici c'est null , we can fix it by  overriding the support !
 }
